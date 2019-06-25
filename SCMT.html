@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- Sand Creek Medtech Website created by Nolan Minar for Chris Minar -->
+<!-- Welcome! -->
+<html>
+  <head>
+    <title>Medical Device Design & Devolpment Consulting | Sand Creek Medtech</title>
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="name">
+        SAND CREEK MEDTECH
+      </div>
+      <div class="shortintro">
+        Medical Device Development
+        <br>
+        Innovation Lab to Launch
+      </div>
+    </div>
+      <div class="tab">
+      <button class="tablinks" onclick="openInfo(event, 'Home')" id="default">Home</button>
+      <button class="tablinks" onclick="openInfo(event, 'Bio')">Bio</button>
+      <button class="tablinks" onclick="openInfo(event, 'About')">About</button>
+      <button class="tablinks" onclick="openInfo(event, 'Services')">Services</button>
+      <button class="tablinks" onclick="openInfo(event, 'Product Types')">Product Types</button>
+      <button class="tablinks" onclick="openInfo(event, 'Contact')">Contact</button>
+      <button class="pynimation" onclick="window.open('https://www.linkedin.com/in/christopher-minar-3b4b155/','_blank');" type="button">Python Animation</button>
+    </div>
+    <script>
+      function openInfo(evt, infotype) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(infotype).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <script>
+      document.getElementById("default").click();
+    </script>
+  </body>
+  
+</html>
