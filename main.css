@@ -1,0 +1,10 @@
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.tabcontent {
+  width: 800px;
+  margin: auto;
+  animation: fadeEffect 1s;
+}
