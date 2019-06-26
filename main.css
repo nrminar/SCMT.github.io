@@ -7,6 +7,16 @@
   border-radius: 12px;
 }
 
+.tab {
+  width: 325px;
+  margin: auto;
+}
+
+.intro {
+  width: 800px;
+  margin: auto;
+}
+
 .tabcontent {
   width: 800px;
   margin: auto;
